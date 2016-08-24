@@ -6,7 +6,11 @@ class ArticleList extends Component {
   render() {
 
     return (
-      <div>test</div>
+      <div>
+        {this.props.articles.toString()}
+        <button onClick={this.props.onArticlesLoad}>press me</button>
+      </div>
+
     )
   }
 
